@@ -1,0 +1,4 @@
+[vicare]
+client_id = test
+email = example@example.com
+passord = password

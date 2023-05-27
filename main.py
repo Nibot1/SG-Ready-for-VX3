@@ -23,7 +23,7 @@ for x in vicare.devices:
         
         data = {
             "transfer_power_exchange": t.getPointOfCommonCouplingTransferPowerExchange(),
-            "pv-status": t.getPhotovoltaicStatus(),
-            "pv-production": current_production,
+            "pv_status": t.getPhotovoltaicStatus(),
+            "pv_production": current_production,
         }
         print(json.dumps(data))

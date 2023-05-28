@@ -28,6 +28,6 @@ for x in vicare.devices:
             "transfer_power_exchange": t.getPointOfCommonCouplingTransferPowerExchange(),
             "pv_status": t.getPhotovoltaicStatus(),
             "pv_production": current_production,
-            "ees_current_power": ees_current_power,
+            "ees_current_discharge": ees_current_power,
         }
         print(json.dumps(data))

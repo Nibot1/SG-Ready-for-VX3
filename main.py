@@ -26,7 +26,7 @@ try:
                 ees_current_power = int(ees_current_power * 1000)  # convert kW to W
 
             data = {
-                result: "ok",
+                "result": "ok",
                 "transfer_power_exchange": t.getPointOfCommonCouplingTransferPowerExchange(),
                 "pv_status": t.getPhotovoltaicStatus(),
                 "pv_production": current_production,
@@ -34,5 +34,5 @@ try:
             }
             print(json.dumps(data))
 except:
-    output = { result: "error" }
+    output = { "result": "error" }
     print(json.dumps(output))

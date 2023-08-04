@@ -14,7 +14,7 @@ password = config.get("vicare", "password")
 vicare = PyViCare()
 vicare.initWithCredentials(email, password, client_id, "token.save")
 for x in vicare.devices:
-    if x.getModel() == "E3_HEMS":
+    if x.getModel() == "E3_VitoCharge_03":
         device = x
         t = device.asAutoDetectDevice()
         current_production = t.getPhotovoltaicProductionCurrent()

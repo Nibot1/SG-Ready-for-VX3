@@ -18,7 +18,7 @@ try:
             device = vicare.devices[0]
             t= device.asAutoDetectDevice()
             data = {
-                "result":"ok,
+                "result":"ok",
                 "dhw-storgae-temp": t.getDomesticHotWaterStorageTemperature()
             }
             print(json.dumps(data))

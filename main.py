@@ -19,7 +19,7 @@ try:
             t= device.asAutoDetectDevice()
             data = {
                 "result":"ok",
-                "dhw-storgae-temp": t.getDomesticHotWaterStorageTemperature()
+                "dhw_storage_temperature": t.getDomesticHotWaterStorageTemperature()
             }
             print(json.dumps(data))
     else:

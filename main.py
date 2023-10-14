@@ -14,7 +14,7 @@ password = config.get("vicare", "password")
 try:
     vicare = PyViCare()
     vicare.initWithCredentials(email, password, client_id, "token.save")
-    if sys.argv[0] == dhw-temperature:
+    if sys.argv[0] == "dhw-temperature":
             device = vicare.devices[0]
             t= device.asAutoDetectDevice()
             data = {
